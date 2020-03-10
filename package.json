@@ -1,11 +1,11 @@
 {
-  "name": "svelte-color-chooser",
+  "name": "svelte-pick-a-color",
   "version": "0.1.0",
-  "description": "A Svelte Color Chooser Component.",
+  "description": "A Svelte Color Picker Component.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "files": ["dist", "README.md"],
-  "repository": "github:rodgco/svelte-color-chooser",
+  "repository": "github:rodgco/svelte-pick-a-color",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -15,13 +15,10 @@
     "svelte",
     "component",
     "color",
-    "chooser"
+    "picker"
   ],
   "author": "Rodrigo Couto",
   "license": "MIT",
-  "dependencies": {
-    "svelte": "^3.19.2"
-  },
   "devDependencies": {
     "rollup": "^2.0.2",
     "rollup-plugin-commonjs": "^10.1.0",
@@ -29,6 +26,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^5.1.1",
     "rollup-plugin-terser": "^5.3.0",
-    "sirv-cli": "^0.4.5"
+    "sirv-cli": "^0.4.5",
+    "svelte": "^3.19.2"
   }
 }

@@ -16,9 +16,9 @@ export default function(node) {
   }
 
 	function handleMousedown(event) {
-    width = event.srcElement.clientWidth;
-    height = event.srcElement.clientHeight;
-    target = event.target;
+        width = event.srcElement.clientWidth;
+        height = event.srcElement.clientHeight;
+        target = event.target;
  		updateCoords(event)
 
 		window.addEventListener('mousemove', handleMousemove);
@@ -26,11 +26,11 @@ export default function(node) {
 	}
 
 	function handleMousemove(event) {
-    if (event.target === target) updateCoords(event);
+        updateCoords(event);
 	}
 
 	function handleMouseup(event) {
- 		if (event.target === target) updateCoords(event);
+ 		updateCoords(event);
 		window.removeEventListener('mousemove', handleMousemove);
 		window.removeEventListener('mouseup', handleMouseup);
 	}
